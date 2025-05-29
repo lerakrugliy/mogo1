@@ -1,0 +1,99 @@
+:root {
+    --text-color: #595959;
+    --secondary-text-color: #151515;
+    --nav-list-color: #00957A;
+    --alert-text-color: #DE2A2A;
+    --background-color: #FFFFFF;
+    --accent-color: #00957A;
+    --font-family: "Montserrat", sans-serif;
+    --second-family: "Roboto", sans-serif;
+    --third-family: "Kaushan Script", sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+.container {
+    width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+    outline: 1px solid red;
+}
+
+.mogo {
+    font-weight: 700;
+    font-size: 30px;
+    color: var(--accent-color);
+}
+
+.benefits_title, 
+.team_title{
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: var(--third-family);
+    font-weight: 400;
+    font-size: 24px;
+    color: #151515;
+}
+
+.benefits_text, .team_heading{
+    margin-bottom: 50px;
+    text-align: center;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 30px;
+    font-variant: all-small-caps;
+    color: #151515;
+}
+
+.header_link {
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--nav-list-color);
+}
+
+.benefits {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.benefits_title {
+    font-family: var(--third-family);
+    font-weight: 400;
+    font-size: 24px;
+    color: #151515;
+}
+
+.benefits_text {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 30px;
+    font-variant: all-small-caps;
+    color: #151515;   
+}
+
+.benefits_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px 70px;
+}
+
+.benefits_item {
+    flex-basis: calc((100% - 140px) / 3);
+}
+
+.team {
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+.team_list {
+    display: flex;
+    gap: 30px;
+}
+
+.team_item {
+    flex-basis: calc((100% - 60px) / 3);
+}
