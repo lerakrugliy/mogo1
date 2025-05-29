@@ -75,6 +75,17 @@ body {
     color: #151515;   
 }
 
+.benefits_text::after,
+.team_heading::after{
+    display: block;
+    margin: 0 auto;
+    margin-top: 43px;
+    width: 60px;
+    height: 4px;
+    content: "";
+    background-color: var(--alert-text-color);
+
+}
 .benefits_list {
     display: flex;
     flex-wrap: wrap;
