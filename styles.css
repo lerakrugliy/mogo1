@@ -33,12 +33,16 @@ body {
 }
 .header_flex{
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
 .header_list{
     display: flex;
     gap: 55px;
+}
+.header_list:hover{
+    color: var(--alert-text-color);
 }
 .benefits_title, 
 .team_title{
@@ -118,6 +122,20 @@ body {
 
 .team_item {
     flex-basis: calc((100% - 60px) / 3);
+}
+
+.team_text{
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+.team_name{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 25px;
+}
+.team_position{
+    text-align: center;
 }
 .footer{
     padding-top: 10px;
