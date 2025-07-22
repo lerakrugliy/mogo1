@@ -28,7 +28,18 @@ body {
     font-size: 30px;
     color: var(--accent-color);
 }
-
+.header{
+    padding-top: 16px;
+}
+.header_flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header_list{
+    display: flex;
+    gap: 55px;
+}
 .benefits_title, 
 .team_title{
     margin-bottom: 20px;
@@ -107,4 +118,55 @@ body {
 
 .team_item {
     flex-basis: calc((100% - 60px) / 3);
+}
+.footer{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.footer::before{
+    content:"";
+    display: block;
+    width: 1200px;
+    height: 1px;
+    background-color: var(--text-color);
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.footer_flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer_text{
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--secondary-text-color);
+}
+.footer_text_red{
+    color: var(--alert-text-color);
+}
+.footer_form{
+    display: flex;
+}
+.footer_input{
+    padding: 12px 10px;
+    border: 1px solid var(--text-color);
+    border-right: none;
+}
+.footer_input::placeholder{
+    font-family: var(--second-family);
+    font-style: italic;
+    font-weight: 300;
+    font-size: 14px;
+}
+.footer_button{
+    padding: 11px 38px;
+    background-color: var(--accent-color);
+    color: var(--background-color);
+    font-weight: 700;
+    font-size: 14px;
+    font-variant: all-small-caps;
+}
+.footer_button:hover{
+    background-color: #007c65;
 }
