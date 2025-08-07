@@ -108,7 +108,25 @@ body {
 }
 
 .benefits_item {
+    display: flex;
+    gap: 20px;
     flex-basis: calc((100% - 140px) / 3);
+}
+
+.benefits_icon{
+    width: 37px;
+    height: 37px;
+    fill: var(--accent-color);
+    transition: fill 0.5s ease;
+}
+
+.benefits_photo:hover > .benefits_icon{
+  fill: var(--alert-text-color);
+}
+
+.photography_title{
+    font-variant: all-small-caps;
+    padding-bottom: 20px;
 }
 
 .team {
@@ -124,6 +142,36 @@ body {
     flex-basis: calc((100% - 60px) / 3);
 }
 
+.social_list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.social_item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50px;
+    background-color: var(--accent-color);
+    color: var(--background-color);
+    transition: background-color 0.5s ease;
+}
+
+.social_item:hover{
+    color: currentColor;
+    background-color: var(--background-color);
+}
+
+.social_icon{
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+
 .team_text{
     padding-bottom: 25px;
     text-align: center;
@@ -136,6 +184,7 @@ body {
 }
 .team_position{
     text-align: center;
+    padding-bottom: 25px;
 }
 .footer{
     padding-top: 10px;
@@ -178,6 +227,10 @@ body {
     font-size: 14px;
 }
 .footer_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
     padding: 11px 38px;
     background-color: var(--accent-color);
     color: var(--background-color);
@@ -187,4 +240,5 @@ body {
 }
 .footer_button:hover{
     background-color: #007c65;
+    color: var(--secondary-text-color);
 }
